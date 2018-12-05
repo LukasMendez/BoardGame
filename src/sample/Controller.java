@@ -16,6 +16,8 @@ public class Controller {
 
         sc.drawSquare(sc);
 
+        System.out.println("Welcome broder");
+
     }
 
 
