@@ -1,49 +1,42 @@
 package sample;
 
-import javafx.scene.canvas.Canvas;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 
 public class Square {
 
-    private Canvas canvasBackground;
 
     private int positionX;
-    private int getPositionY;
-    private int size;
+    private int positionY;
+    private final int SIZE;
     private Color color;
-
-
 
 
 
     public Square(int positionX, int positionY, int size, Color color){
 
         this.positionX=positionX;
-        this.getPositionY=positionY;
-        this.size=size;
+        this.positionY=positionY;
+        this.SIZE=size;
         this.color=color;
 
 
     }
 
-
-    public void drawSquare(Square name){
-
-        for (int i = 1; i <= canvasBackground.getWidth(); i=i+75) {
-
-            System.out.println("shit");
-
-        }
-
-
-
+    public int getPositionX(){
+        return this.positionX;
     }
 
+    public int getPositionY(){
+        return this.positionY;
+    }
 
+    public int getSIZE(){
+        return this.SIZE;
+    }
 
-
-
+    public Color getColor(){
+        return color;
+    }
 
 
 }
